@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mark Quilts — Handmade Quilts & Memory Quilts</title>
+  <meta name="description" content="Handmade quilts and memory quilts by Mark. Crafted with care, warmth, and a cottagecore editorial aesthetic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <div class="container nav-wrap">
+    <a href="/" class="site-branding" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+      <img src="assets/images/logo_green.png" alt="Mark Quilts logo" style="height: 40px; width: auto; mask: none; -webkit-mask: none;">
+      <span class="brand">Mark Quilts</span>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="story.html">About Mark</a>
+        
+        <!-- New Dropdown Menu -->
+        <div class="dropdown">
+          <a href="quilts.html" class="dropdown-toggle">Our Creations</a>
+          <div class="dropdown-menu">
+            <a href="quilts.html">Custom Quilts</a>
+            <a href="decorative.html">Decorative Quilts</a>
+            <a href="alterations.html">Repairs & Interventions</a>
+            <a href="practical.html">Practical Creations</a>
+          </div>
+        </div>
+
+        
+        <a href="sew.html">Sew Along</a>
+        <!-- <a href="gallery.html">Photo Gallery</a> 
+        <a href="order.html">Order Now</a>-->
+        <a href="contact.html">Inquiries & Contact</a>
+      </nav>
+    </div>
+  </header>
+    <main id="main">
+        
+    
+
+    <section id="order" class="section">
+      <div class="container order-grid">
+        <div class="order-copy">
+          <p class="eyebrow">Begin your project</p>
+          <h2>Begin with a conversation, then build something lasting.</h2>
+          <p>
+            If you’re considering a custom quilt or a memory quilt, the process starts simply.
+            We’ll talk through size, purpose, materials, timing, and the mood you want the finished piece to hold.
+          </p>
+
+          <ol class="steps">
+            <li><strong>Share your idea</strong><span>Tell Mark what you’re imagining and what materials you may want to use.</span></li>
+            <li><strong>Refine the details</strong><span>Review direction, palette, dimensions, and project timing together.</span></li>
+            <li><strong>Begin the making</strong><span>Once the plan is set, the quilt moves into the studio and into process.</span></li>
+          </ol>
+
+          <a class="btn btn-primary" href="#contact">Important information</a>
+        </div>
+
+        <div class="order-image">
+          <img src="assets/images/quilt-04.jpg" alt="A finished quilt folded over a chair near a window" width="850" height="1000" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section id="contact" class="section section-soft">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Tell me what you’re dreaming up.</h2>
+          <p>
+            Whether you’re interested in a custom quilt, a memory piece, or a future sew-along,
+            I’d love to hear a little about what you have in mind.
+          </p>
+          <p class="contact-note">You can also write directly at <a href="mailto:hello@markquilts.com">hello@markquilts.com</a></p>
+        </div>
+
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" />
+
+          <label for="message">What are you dreaming up?</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell Mark about your quilt idea, timeline, or materials."></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Your Inquiry</button>
+        </form>
+      </div>
+    </section>
+  
+    </main>
+    <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Mark Quilts — Handmade quilts, memory quilts, and slow craft.</p>
+      <p><a href="index.html">Back to top</a></p>
+    </div>
+  </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,213 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mark Quilts — Handmade Quilts & Memory Quilts</title>
-  <meta name="description" content="Handmade quilts and memory quilts by Mark. Crafted with care, warmth, and a cottagecore editorial aesthetic." />
+  <title>Mark Quilts — Handmade Creations</title>
+  <meta name="description"
+    content="Handmade quilts and memory quilts by Mark. Crafted with care, warmth, and a cottagecore editorial aesthetic." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#home" class="brand">Mark Quilts</a>
+      <a href="/" class="site-branding" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+        <img src="assets/images/logo_green.png" alt="Mark Quilts logo"
+          style="height: 40px; width: auto; mask: none; -webkit-mask: none;">
+        <span class="brand">Mark Quilts</span>
+      </a>
 
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About Mark</a>
-        <a href="#quilts">Our Quilts</a>
-        <a href="#gallery">Photo Gallery</a>
-        <a href="#order">Order Now</a>
-        <a href="#sewalong">Sew Along</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+        <a href="index.html">Home</a>
+        <a href="story.html">About Mark</a>
 
-  <main id="main">
-    <section id="home" class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Handmade quilts with memory and meaning</p>
-          <h1>Quietly crafted quilts for homes, stories, and keepsakes.</h1>
-          <p class="hero-text">
-            Mark creates heirloom quilts and memory quilts with a warm, thoughtful approach to texture,
-            color, and everyday beauty.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#quilts">View the Quilts</a>
-            <a class="btn btn-secondary" href="#order">Start a Custom Order</a>
+        <!-- New Dropdown Menu -->
+        <div class="dropdown">
+          <a href="quilts.html" class="dropdown-toggle">Our Creations</a>
+          <div class="dropdown-menu">
+            <a href="quilts.html">Custom Quilts</a>
+            <a href="decorative.html">Decorative Quilts</a>
+            <a href="alterations.html">Repairs & Interventions</a>
+            <a href="practical.html">Practical Creations</a>
           </div>
         </div>
 
-        <div class="hero-media">
-          <img src="assets/images/hero-quilt.jpg" alt="A handmade quilt draped in a warm, softly lit room" width="900" height="1100" loading="eager">
+        <a href="sew.html">Sew Along</a>
+         <a href="contact.html">Inquiries & Contact</a>
+      </nav>
+
+    </div>
+  </header>
+  <main id="main">
+
+    <section id="home" class="hero section">
+      <div class="container hero-grid" style="align-items: center;">
+        <div class="hero-copy">
+          <p class="eyebrow">Handmade creations with memory and meaning</p>
+          <h1>Quietly crafted to hold your stories.</h1>
+          <p class="hero-text">
+            Mark creates heirloom quilts and memory quilts with a warm, thoughtful approach to texture, color, and
+            everyday beauty.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="quilts.html">View the Quilts</a>
+            <a class="btn btn-secondary" href="contact.html">Start a Custom Order</a>
+          </div>
+        </div>
+
+        <div class="hero-media" style="display: flex; justify-content: flex-start; padding: 2rem 2rem 2rem 0;">
+          <!-- Polaroid Wrapper (Aligned left to close the gap) -->
+          <div
+            style="background: white; padding: 1rem 1rem 3.5rem 1rem; box-shadow: 0 15px 35px rgba(0,0,0,0.11); transform: rotate(-3deg); transition: transform 0.3s ease; max-width: 450px; width: 100%;">
+            <img src="assets/images/hero-quilt.jpg" alt="A handmade quilt draped in a warm, softly lit room"
+              loading="eager"
+              style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 0 !important; margin: 0;">
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section section-soft">
-      <div class="container about-grid">
-        <div class="about-image">
-          <img src="assets/images/mark-portrait.jpg" alt="Portrait of Mark in his quilt studio" width="800" height="950" loading="lazy">
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow">About Mark</p>
-          <h2>A practice shaped by patience, memory, and craftsmanship.</h2>
-          <p>
-            Mark is a quilt maker drawn to pieces that feel both deeply useful and quietly expressive.
-            His work blends traditional quilt-making techniques with a modern editorial eye.
-          </p>
-          <p>
-            At the center of his practice are craftsmanship, education, community engagement, and artistic integrity.
-            Each quilt is made to be lived with, remembered, and passed on.
-          </p>
+    <section id="about" class="section section-soft" style="padding: 4rem 0;">
+      <div class="container">
+        <div class="about-grid" style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
 
-          <div class="values-grid">
-            <article>
-              <h3>Craftsmanship</h3>
-              <p>Careful piecing, durable construction, and refined material choices.</p>
-            </article>
-            <article>
-              <h3>Education</h3>
-              <p>Sharing techniques, process, and confidence through gentle teaching.</p>
-            </article>
-            <article>
-              <h3>Community</h3>
-              <p>Creating welcoming spaces for conversation, making, and exchange.</p>
-            </article>
-            <article>
-              <h3>Integrity</h3>
-              <p>Thoughtful design decisions guided by meaning rather than trends.</p>
-            </article>
+          <div class="about-image" style="flex: 1; min-width: 300px; max-width: 400px; margin: 0 auto;">
+            <img src="assets/images/about-mark.jpg" alt="Mark working on a quilt in his studio"
+              style="width: 100%; height: auto; border-radius: 8px; object-fit: cover; aspect-ratio: 4/5;">
           </div>
+
+          <div class="about-content" style="flex: 1; min-width: 300px;">
+            <p class="eyebrow">About Mark</p>
+            <h2>Patience, Memory, and Craftsmanship.</h2>
+            <p>
+              Mark is a quilt maker drawn to pieces that feel both deeply useful and quietly expressive. His work blends
+              traditional quilt-making techniques with a modern editorial eye. At the center of his practice are
+              craftsmanship, education, community engagement, and artistic integrity. Each quilt is made to be lived
+              with, remembered, and passed on.
+            </p>
+            <p>
+              Mark’s sew-alongs are for makers who want a thoughtful pace, clear guidance, and a feeling of community.
+              Expect seasonal projects, studio notes, and approachable instruction.
+            </p>
+
+            <!-- New Call to Action button -->
+            <a href="story.html" class="btn btn-primary">Read Mark's Story</a>
+            <a class="btn btn-secondary" href="sew.html">Join the Sew Along</a>
+          </div>
+
         </div>
       </div>
     </section>
 
     <section id="quilts" class="section">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Our Quilts</p>
-          <h2>Made for daily comfort and lasting memory.</h2>
-          <p>
-            From custom bed quilts to one-of-a-kind memory pieces, each work is designed to hold warmth, beauty, and personal meaning.
-          </p>
+        <div class="section-heading" style="text-align: center; margin-bottom: 4rem;">
+          <p class="eyebrow">Our Offerings</p>
+          <h2>Beautifully useful. Purposefully stitched.</h2>
         </div>
 
-        <div class="card-grid">
-          <article class="quilt-card">
-            <img src="assets/images/quilt-01.jpg" alt="A custom quilt folded over a wooden bench" width="700" height="900" loading="lazy">
-            <div class="card-body">
-              <h3>Custom Quilts</h3>
-              <p>Designed around your home, palette, and the feeling you want the piece to carry.</p>
-            </div>
-          </article>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem;">
 
-          <article class="quilt-card">
-            <img src="assets/images/quilt-02.jpg" alt="A memory quilt made from meaningful garments" width="700" height="900" loading="lazy">
-            <div class="card-body">
-              <h3>Memory Quilts</h3>
-              <p>Created from personal textiles and clothing, preserving stories in stitched form.</p>
-            </div>
-          </article>
+          <div style="text-align: center;">
+            <a href="quilts.html" class="circle-link">
+              <img src="assets/images/cat-quilts.jpg" alt="Quilts" class="circle-img">
+              <div class="circle-overlay">
+                <p class="circle-desc">Custom bed and memory quilts designed for your home.</p>
+              </div>
+            </a>
+            <h3 class="circle-title" style="margin-top: 1.5rem;">
+              <a href="quilts.html" style="text-decoration: none; color: #2B2926;">Custom Quilts</a>
+            </h3>
+          </div>
 
-          <article class="quilt-card">
-            <img src="assets/images/quilt-03.jpg" alt="A seasonal handmade quilt displayed in a softly lit bedroom" width="700" height="900" loading="lazy">
-            <div class="card-body">
-              <h3>Seasonal Pieces</h3>
-              <p>Small-batch works released throughout the year in limited numbers.</p>
-            </div>
-          </article>
+          <div style="text-align: center;">
+            <a href="decorative.html" class="circle-link">
+              <img src="assets/images/cat-decorative.jpg" alt="Decorative Items" class="circle-img">
+              <div class="circle-overlay">
+                <p class="circle-desc">Wall hangings and artful touches for quiet spaces.</p>
+              </div>
+            </a>
+            <h3 class="circle-title" style="margin-top: 1.5rem;">
+              <a href="decorative.html" style="text-decoration: none; color: #2B2926;">Decorative Items</a>
+            </h3>
+          </div>
+
+          <div style="text-align: center;">
+            <a href="alterations.html" class="circle-link">
+              <img src="assets/images/cat-alterations.jpg" alt="Alterations" class="circle-img">
+              <div class="circle-overlay">
+                <p class="circle-desc">Visible mending and thoughtful repairs to loved textiles.</p>
+              </div>
+            </a>
+            <h3 class="circle-title" style="margin-top: 1.5rem;">
+              <a href="alterations.html" style="text-decoration: none; color: #2B2926;">Repairs & Interventions</a>
+            </h3>
+          </div>
+
+          <div style="text-align: center;">
+            <a href="practical.html" class="circle-link">
+              <img src="assets/images/cat-practical.jpg" alt="Practical Creations" class="circle-img">
+              <div class="circle-overlay">
+                <p class="circle-desc">Everyday objects made beautiful, from bags to coasters.</p>
+              </div>
+            </a>
+            <h3 class="circle-title" style="margin-top: 1.5rem;">
+              <a href="practical.html" style="text-decoration: none; color: #2B2926;">Practical Creations</a>
+            </h3>
+          </div>
+
         </div>
 
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#order">Order a Custom Quilt</a>
-        </div>
+      </div>
       </div>
     </section>
 
-    <section id="gallery" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Photo Gallery</p>
-          <h2>Texture, detail, and the beauty of the handmade.</h2>
-          <p>A closer look at stitching, drape, palette, and the life of each quilt in space.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <img src="assets/images/gallery-01.jpg" alt="Close-up of hand quilting stitches and textured fabric" width="700" height="900" loading="lazy">
-          <img src="assets/images/gallery-02.jpg" alt="A handmade quilt spread across a bed in natural light" width="700" height="700" loading="lazy">
-          <img src="assets/images/gallery-03.jpg" alt="Folded quilt showing layered patchwork details" width="700" height="850" loading="lazy">
-          <img src="assets/images/gallery-04.jpg" alt="Hands working on quilt binding in a calm studio setting" width="700" height="900" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section id="order" class="section">
-      <div class="container order-grid">
-        <div class="order-copy">
-          <p class="eyebrow">Order Now</p>
-          <h2>Begin with a conversation, then build something lasting.</h2>
-          <p>
-            If you’re considering a custom quilt or a memory quilt, the process starts simply.
-            We’ll talk through size, purpose, materials, timing, and the mood you want the finished piece to hold.
-          </p>
-
-          <ol class="steps">
-            <li><strong>Share your idea</strong><span>Tell Mark what you’re imagining and what materials you may want to use.</span></li>
-            <li><strong>Refine the details</strong><span>Review direction, palette, dimensions, and project timing together.</span></li>
-            <li><strong>Begin the making</strong><span>Once the plan is set, the quilt moves into the studio and into process.</span></li>
-          </ol>
-
-          <a class="btn btn-primary" href="#contact">Begin Your Quilt</a>
-        </div>
-
-        <div class="order-image">
-          <img src="assets/images/quilt-04.jpg" alt="A finished quilt folded over a chair near a window" width="850" height="1000" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section id="sewalong" class="section section-soft">
-      <div class="container sew-grid">
-        <div>
-          <p class="eyebrow">Sew Along</p>
-          <h2>Learn slowly, stitch together, and return to the studio often.</h2>
-          <p>
-            Mark’s sew-alongs are for makers who want a thoughtful pace, clear guidance, and a feeling of community.
-            Expect seasonal projects, studio notes, and approachable instruction.
-          </p>
-          <a class="btn btn-secondary" href="#contact">Join the Sew Along</a>
-        </div>
-
-        <div class="sew-cards">
-          <article>
-            <h3>Seasonal Sessions</h3>
-            <p>Short guided projects designed around color, rhythm, and practical skill-building.</p>
-          </article>
-          <article>
-            <h3>Studio Notes</h3>
-            <p>Reflections on process, materials, tools, and the art of making with intention.</p>
-          </article>
-          <article>
-            <h3>Community Making</h3>
-            <p>A welcoming place for questions, progress sharing, and encouragement.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
+    <section id="contact" class="section section-soft">
       <div class="container contact-grid">
         <div class="contact-copy">
           <p class="eyebrow">Contact</p>
@@ -216,7 +183,8 @@
             Whether you’re interested in a custom quilt, a memory piece, or a future sew-along,
             I’d love to hear a little about what you have in mind.
           </p>
-          <p class="contact-note">You can also write directly at <a href="mailto:hello@markquilts.com">hello@markquilts.com</a></p>
+          <p class="contact-note">You can also write directly at <a
+              href="mailto:hello@markquilts.com">hello@markquilts.com</a></p>
         </div>
 
         <form class="contact-form">
@@ -227,21 +195,22 @@
           <input id="email" name="email" type="email" placeholder="Your email" />
 
           <label for="message">What are you dreaming up?</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell Mark about your quilt idea, timeline, or materials."></textarea>
+          <textarea id="message" name="message" rows="6"
+            placeholder="Tell Mark about your quilt idea, timeline, or materials."></textarea>
 
           <button class="btn btn-primary" type="submit">Send Your Inquiry</button>
         </form>
       </div>
     </section>
-  </main>
 
+  </main>
   <footer class="site-footer">
     <div class="container footer-wrap">
       <p>Mark Quilts — Handmade quilts, memory quilts, and slow craft.</p>
-      <p><a href="#home">Back to top</a></p>
+      <p><a href="index.html">Back to top</a></p>
     </div>
   </footer>
-
   <script src="script.js" defer></script>
 </body>
+
 </html>

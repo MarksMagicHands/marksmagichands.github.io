@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Story - Mark Quilts</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- UPDATED HEADER FROM INDEX -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="/" class="site-branding" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+        <img src="assets/images/logo_green.png" alt="Mark Quilts logo"
+          style="height: 40px; width: auto; mask: none; -webkit-mask: none;">
+        <span class="brand">Mark Quilts</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="story.html">About Mark</a>
+
+        <!-- New Dropdown Menu -->
+        <div class="dropdown">
+          <a href="quilts.html" class="dropdown-toggle">Our Creations</a>
+          <div class="dropdown-menu">
+            <a href="quilts.html">Custom Quilts</a>
+            <a href="decorative.html">Decorative Quilts</a>
+            <a href="alterations.html">Repairs & Interventions</a>
+            <a href="practical.html">Practical Creations</a>
+          </div>
+        </div>
+
+        <a href="sew.html">Sew Along</a>
+        <a href="contact.html">Inquiries & Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" class="section section-soft" style="padding-top: 5rem;">
+      <div class="container">
+
+        <!-- Top Section: Text left, Image Right -->
+        <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+          <div style="flex: 1; min-width: 300px;">
+            <p class="eyebrow">Meet Mark</p>
+            <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); max-width: 15ch;">A practice shaped by patience.</h1>
+            <p style="font-size: 1.2rem; color: var(--text); margin-bottom: 1rem;">
+              I’m a quilt maker drawn to pieces that feel deeply useful and quietly expressive.
+            </p>
+            <p>
+              Blending traditional quilt-making techniques with a modern editorial eye, I create heirloom pieces
+              designed to hold your stories. My hope is that my quilts bring a sense of warmth, intention, and grounding
+              to your everyday spaces.
+            </p>
+            <p>
+              Blending traditional quilt-making techniques with a modern editorial eye, I create heirloom pieces
+              designed to hold your stories. My hope is that my quilts bring a sense of warmth, intention, and grounding
+              to your everyday spaces.
+            </p>
+            <p>
+              Blending traditional quilt-making techniques with a modern editorial eye, I create heirloom pieces
+              designed to hold your stories. My hope is that my quilts bring a sense of warmth, intention, and grounding
+              to your everyday spaces.
+            </p>
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <!-- Main Polaroid style portrait -->
+            <div
+              style="background: white; padding: 1rem 1rem 3rem 1rem; box-shadow: var(--shadow); transform: rotate(2deg);">
+              <img src="assets/images/mark-portrait.jpg" alt="Mark holding a finished quilt"
+                style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 0;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section: Image left, Values Right -->
+        <div style="display: flex; flex-wrap: wrap-reverse; gap: 4rem; align-items: center;">
+          <div style="flex: 1; min-width: 300px;">
+            <img src="assets/images/about-mark.jpg" alt="Sewing machine details"
+              style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; box-shadow: var(--shadow);">
+          </div>
+          <div style="flex: 1.5; min-width: 350px;">
+            <h2 style="margin-bottom: 2rem;">The heart of my studio</h2>
+            <div class="values-grid" style="margin-top: 0;">
+              <article style="padding: 1.5rem;">
+                <h3>Craftsmanship</h3>
+                <p>Careful piecing, durable construction, and refined materials.</p>
+              </article>
+              <article style="padding: 1.5rem;">
+                <h3>Education</h3>
+                <p>Sharing techniques and confidence through gentle teaching.</p>
+              </article>
+              <article style="padding: 1.5rem;">
+                <h3>Community</h3>
+                <p>Creating welcoming spaces for conversation and exchange.</p>
+              </article>
+              <article style="padding: 1.5rem;">
+                <h3>Integrity</h3>
+                <p>Thoughtful design decisions guided by deep meaning.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Mark Quilts — Handmade quilts, memory quilts, and slow craft.</p>
+      <p><a href="index.html">Back to top</a></p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
