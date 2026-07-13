@@ -711,3 +711,49 @@ object-fit: cover;
     object-fit: cover;
     cursor: pointer;
 }
+
+/* Estilos y animación para el botón flotante */
+.whatsapp-btn-pulse {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-decoration: none;
+    animation: pulse-glow 2s infinite;
+}
+
+.whatsapp-btn-pulse svg {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-btn-pulse:hover {
+    background-color: #128c7e;
+    animation: none; /* Detiene la animación al pasar el cursor */
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animación Keyframes */
+@keyframes pulse-glow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
