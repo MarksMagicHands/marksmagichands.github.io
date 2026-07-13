@@ -2,12 +2,41 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Story - Mark Quilts</title>
   <link rel="stylesheet" href="style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@400;500&display=swap"
     rel="stylesheet">
+
+<style id="mobile-responsive-patch">
+html{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+*,*::before,*::after{box-sizing:inherit;}
+img,video,iframe,canvas,svg{max-width:100%;height:auto;}
+body{overflow-x:hidden;}
+@media (max-width: 900px){
+  body{padding-left:16px !important;padding-right:16px !important;}
+  .container,.wrapper,.content,.section,main,header,footer,nav{width:100% !important;max-width:100% !important;}
+  [style*="width:"]{max-width:100% !important;}
+  [style*="display: grid"],[style*="display:grid"]{grid-template-columns:1fr !important;}
+  [style*="display: flex"],[style*="display:flex"]{flex-direction:column !important;}
+  h1{font-size:clamp(2rem,8vw,3rem) !important;line-height:1.1 !important;}
+  h2{font-size:clamp(1.5rem,6vw,2.25rem) !important;line-height:1.15 !important;}
+  h3{font-size:clamp(1.2rem,5vw,1.6rem) !important;}
+  p,li,a,button,input,textarea{font-size:1rem !important;}
+  section,header,footer,main,article,aside{padding-left:0 !important;padding-right:0 !important;}
+}
+@media (max-width: 640px){
+  body{padding-left:12px !important;padding-right:12px !important;}
+  [style*="grid-template-columns"]{grid-template-columns:1fr !important;}
+  [style*="columns:"]{columns:1 !important;}
+  [style*="position: absolute"],[style*="position:absolute"]{max-width:100% !important;}
+  table{display:block;overflow-x:auto;white-space:nowrap;}
+  br{display:none;}
+}
+</style>
+
 </head>
 
 <body>
@@ -20,9 +49,11 @@
           style="height: 40px; width: auto; mask: none; -webkit-mask: none;">
         <span class="brand">Mark Quilts</span>
       </a>
+
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
+
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="story.html">About Mark</a>
@@ -39,8 +70,9 @@
                 </div>
 
         <a href="sew.html">Sew Along</a>
-        <a href="contact.html">Inquiries & Contact</a>
+         <a href="contact.html">Inquiries & Contact</a>
       </nav>
+
     </div>
   </header>
 
@@ -121,7 +153,7 @@
   <footer class="site-footer">
     <div class="container footer-wrap">
       <p>Mark Quilts — Handmade quilts, memory quilts, and slow craft.</p>
-      <p><a href="index.html">Back to top</a></p>
+      <p><a target="_blank" rel="noopener noreferrer"  href="index.html">Back to top</a></p>
     </div>
   </footer>
   <script src="script.js" defer></script>
