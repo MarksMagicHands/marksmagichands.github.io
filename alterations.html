@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Quilts — Handmade Quilts & Memory Quilts</title>
+    <meta name="description"
+        content="Handmade quilts and memory quilts by Mark. Crafted with care, warmth, and a cottagecore editorial aesthetic." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand"><img src="logo.png" alt="Mark Quilts Logo"
+                    style="height: 1.5em; width: auto; max-height: 40px;"></a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="story.html">About Mark</a>
+
+                <!-- New Dropdown Menu -->
+                <div class="dropdown">
+                    <a  class="dropdown-toggle">Our Creations</a>
+                    <div class="dropdown-menu">
+                        <a href="quilts.html">Custom Quilts</a>
+                        <a href="decorative.html">Decorative Quilts</a>
+                        <a href="alterations.html">Repairs & Interventions</a>
+                        <a href="practical.html">Practical Creations</a>
+                    </div>
+                </div>
+
+
+                <a href="sew.html">Sew Along</a>
+                <!-- <a href="gallery.html">Photo Gallery</a> 
+        <a href="order.html">Order Now</a>-->
+                <a href="contact.html">Inquiries & Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Section 1: Intro with Polaroid -->
+        <section id="quilts-intro" class="section section-soft">
+            <div class="container quilts-intro-grid">
+                <div class="polaroid-frame">
+                    <img src="assets/images/alter_hero.jpg" alt="A custom quilt in progress" width="800" height="950"
+                        loading="eager">
+                </div>
+                <div class="about-copy">
+                    <p class="eyebrow">The Process</p>
+                    <h2>Repairing with Care</h2>
+                    <p>
+                        Mark sees repairs and interventions as a way of honoring what a textile has already lived through. Before any work begins, the focus is on understanding the fabric’s history, its wear, and the kind of care it needs to remain useful and meaningful.
+                    </p>
+                    <p>
+                        Whether the repair is quiet and nearly invisible or intentionally visible as part of the piece’s story, every choice is made with sensitivity and respect. The aim is not simply to fix what is damaged, but to extend the life of something cherished with thoughtfulness, skill, and integrity.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Quilt Gallery -->
+        <section id="quilts-gallery" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Our Quilts</p>
+                    <h2>A Collection of Work</h2>
+                    <p>Explore recent pieces, ranging from custom bed quilts to delicate memory works.</p>
+                </div>
+
+                <div class="quilt-gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('Winter Cabin Quilt', 'A thick, cozy quilt made with rich wool blends and deep indigo cottons. Designed to provide heavy warmth during the coldest months. Hand-quilted using traditional sashiko-inspired stitching for added texture.', 'assets/images/alter_1_2.jpg', ['assets/images/alter_1_2.jpg', 'assets/images/alter_1_1.jpg'])">
+                        <div class="gallery-item-img-wrap">
+                            <img src="assets/images/alter_1_2.jpg" alt="Winter Cabin Quilt" loading="lazy">
+                        </div>
+                        <h3>Winter Cabin Quilt</h3>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('Winter Cabin Quilt', 'A thick, cozy quilt made with rich wool blends and deep indigo cottons. Designed to provide heavy warmth during the coldest months. Hand-quilted using traditional sashiko-inspired stitching for added texture.', 'assets/images/alter_2_1.jpg', ['assets/images/alter_2_1.jpg', 'assets/images/alter_2_2.jpg', 'assets/images/alter_2_3.jpg', 'assets/images/alter_2_4.jpg'])">
+                        <div class="gallery-item-img-wrap">
+                            <img src="assets/images/alter_2_1.jpg" alt="Winter Cabin Quilt" loading="lazy">
+                        </div>
+                        <h3>Winter Cabin Quilt</h3>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('Winter Cabin Quilt', 'A thick, cozy quilt made with rich wool blends and deep indigo cottons. Designed to provide heavy warmth during the coldest months. Hand-quilted using traditional sashiko-inspired stitching for added texture.', 'assets/images/alter_3_1.jpg', ['assets/images/alter_3_1.jpg', 'assets/images/alter_3_2.jpg'])">
+                        <div class="gallery-item-img-wrap">
+                            <img src="assets/images/alter_3_1.jpg" alt="Winter Cabin Quilt" loading="lazy">
+                        </div>
+                        <h3>Winter Cabin Quilt</h3>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('Winter Cabin Quilt', 'A thick, cozy quilt made with rich wool blends and deep indigo cottons. Designed to provide heavy warmth during the coldest months. Hand-quilted using traditional sashiko-inspired stitching for added texture.', 'assets/images/alter_4_1.jpg', ['assets/images/alter_4_1.jpg', 'assets/images/alter_4_2.jpg'])">
+                        <div class="gallery-item-img-wrap">
+                            <img src="assets/images/alter_4_1.jpg" alt="Winter Cabin Quilt" loading="lazy">
+                        </div>
+                        <h3>Midnight Star</h3>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('Winter Cabin Quilt', 'A thick, cozy quilt made with rich wool blends and deep indigo cottons. Designed to provide heavy warmth during the coldest months. Hand-quilted using traditional sashiko-inspired stitching for added texture.', 'assets/images/alter_5_1.jpg', ['assets/images/alter_5_1.jpg', 'assets/images/alter_5_2.jpg', 'assets/images/alter_5_3.jpg'])">
+                        <div class="gallery-item-img-wrap">
+                            <img src="assets/images/alter_5_1.jpg" alt="Winter Cabin Quilt" loading="lazy">
+                        </div>
+                        <h3>Ochre & Rust Throw</h3>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="quiltLightbox" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="close-modal" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-grid">
+                <div class="lightbox-main-img">
+                    <img id="lbMainImage" src="" alt="Main Quilt Image">
+                </div>
+                <div class="lightbox-info">
+                    <h2 id="lbTitle">Quilt Title</h2>
+                    <p id="lbDescription">Quilt description goes here.</p>
+
+                    <h4
+                        style="margin-top: 2rem; margin-bottom: 0.5rem; font-family: var(--font-primary); font-weight: 500;">
+                        More details</h4>
+                    <div class="lightbox-related" id="lbRelatedImages">
+                        <!-- Related images injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>Mark Quilts — Handmade quilts, memory quilts, and slow craft.</p>
+            <p><a href="#home">Back to top</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // Lightbox functionality
+        function openLightbox(title, description, mainImgSrc, relatedImgs) {
+            document.getElementById('lbTitle').innerText = title;
+            document.getElementById('lbDescription').innerText = description;
+            document.getElementById('lbMainImage').src = mainImgSrc;
+
+            const relatedContainer = document.getElementById('lbRelatedImages');
+            relatedContainer.innerHTML = '';
+
+            // Add related images
+            if (relatedImgs && relatedImgs.length > 0) {
+                relatedImgs.forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = "Detail shot";
+                    // Clicking a related image makes it the main image
+                    img.onclick = function () {
+                        document.getElementById('lbMainImage').src = this.src;
+                    };
+                    relatedContainer.appendChild(img);
+                });
+            }
+
+            document.getElementById('quiltLightbox').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeLightbox() {
+            document.getElementById('quiltLightbox').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close when clicking outside the modal content
+        window.onclick = function (event) {
+            const modal = document.getElementById('quiltLightbox');
+            if (event.target === modal) {
+                closeLightbox();
+            }
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+
+</html>
